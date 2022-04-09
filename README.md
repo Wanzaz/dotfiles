@@ -1,1 +1,3 @@
-# dotfiles
+# DotFiles
+- Editor - Nvim
+- Colors - gruvbox

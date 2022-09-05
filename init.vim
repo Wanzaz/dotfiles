@@ -44,6 +44,10 @@ Plug 'morhetz/gruvbox'
 Plug 'simeji/winresizer'
 Plug 'neovim/nvim-lspconfig'
 Plug 'hrsh7th/nvim-compe'
+" Sticky header
+" Plug 'nvim-treesitter/nvim-treesitter'
+" Plug 'nvim-treesitter/nvim-treesitter-context'
+Plug 'wellle/context.vim'
 
 call plug#end()
 

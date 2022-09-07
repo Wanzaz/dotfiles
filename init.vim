@@ -39,6 +39,7 @@ Plug 'tc50cal/vim-terminal' " Vim Terminal
 Plug 'neoclide/coc.nvim', {'branch' : 'release'}
 Plug 'preservim/tagbar' " Tagbar for code navigation
 Plug 'glepnir/dashboard-nvim'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'morhetz/gruvbox'
 Plug 'simeji/winresizer'
@@ -48,6 +49,7 @@ Plug 'hrsh7th/nvim-compe'
 " Plug 'nvim-treesitter/nvim-treesitter'
 " Plug 'nvim-treesitter/nvim-treesitter-context'
 Plug 'wellle/context.vim'
+
 
 call plug#end()
 
@@ -77,6 +79,13 @@ nnoremap <C-H> <C-W>h
 nnoremap <C-J> <C-W>j
 nnoremap <C-K> <C-W>k
 nnoremap <C-L> <C-W>l
+
+nnoremap <C-p> :FZF<CR>
+let g:fzf_action = {
+  \ 'ctrl-b': 'tab split',
+  \ 'ctrl-s': 'split',
+  \ 'ctrl-v': 'vsplit'
+  \}
 
 let g:NERDTreeDirArrowExpandable="+"
 let g:NERDTreeDirArrowCollapsible="~"

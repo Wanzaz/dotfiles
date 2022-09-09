@@ -21,6 +21,7 @@ set completeopt=menuone,noinsert,noselect
 set colorcolumn=80 " line on right side
 set signcolumn=yes
 set fileencodings=utf-8
+set autowrite
 
 au Bufenter .c,.h set comments=sl:/,mb:\ ,elx:*/
 
@@ -87,7 +88,8 @@ let g:fzf_action = {
   \ 'ctrl-v': 'vsplit'
   \}
 
-nnoremap <C-x> :!open -a 'Brave Browser' %<CR><CR>
+nnoremap <C-m> :!open -a 'Brave Browser' %<CR><CR>
+autocmd TextChanged,TextChangedI <buffer> silent write
 
 let g:NERDTreeDirArrowExpandable="+"
 let g:NERDTreeDirArrowCollapsible="~"

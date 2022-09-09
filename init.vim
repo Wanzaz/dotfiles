@@ -87,6 +87,8 @@ let g:fzf_action = {
   \ 'ctrl-v': 'vsplit'
   \}
 
+nnoremap <C-x> :!open -a 'Brave Browser' %<CR><CR>
+
 let g:NERDTreeDirArrowExpandable="+"
 let g:NERDTreeDirArrowCollapsible="~"
 

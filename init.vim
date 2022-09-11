@@ -50,12 +50,15 @@ Plug 'hrsh7th/nvim-compe'
 " Plug 'nvim-treesitter/nvim-treesitter'
 " Plug 'nvim-treesitter/nvim-treesitter-context'
 Plug 'wellle/context.vim'
-
-
+Plug 'mattn/emmet-vim'
 call plug#end()
 
 " nmap <F8> :TagbarToggle<CR>
 " doesn't work yet
+
+" Emmet
+let g:user_emmet_leader_key=','
+
 
 set completeopt-=preview " For No Previews
 
@@ -89,7 +92,6 @@ let g:fzf_action = {
   \}
 
 nnoremap <C-m> :!open -a 'Brave Browser' %<CR><CR>
-autocmd TextChanged,TextChangedI <buffer> silent write
 
 let g:NERDTreeDirArrowExpandable="+"
 let g:NERDTreeDirArrowCollapsible="~"

@@ -60,6 +60,9 @@ call plug#end()
 let g:user_emmet_leader_key=','
 
 
+" greatest remap ever
+xnoremap("<leader>p", "\"_dP")
+
 set completeopt-=preview " For No Previews
 
 colorscheme gruvbox

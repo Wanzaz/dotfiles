@@ -63,6 +63,9 @@ let g:user_emmet_leader_key=','
 " greatest remap ever
 xnoremap("<leader>p", "\"_dP")
 
+" leaving INSERT MODE
+inoremap jk <ESC>
+
 set completeopt-=preview " For No Previews
 
 colorscheme gruvbox
@@ -101,4 +104,5 @@ let g:NERDTreeDirArrowCollapsible="~"
 
 
 inoremap <expr> <Tab> pumvisible() ? coc#_select_confirm() : "<Tab>"
+
 

@@ -23,6 +23,9 @@ set signcolumn=yes
 set fileencodings=utf-8
 set autowrite
 
+" Show Indent Guide
+" :set list lcs=tab:\|\
+
 au Bufenter .c,.h set comments=sl:/,mb:\ ,elx:*/
 
 
@@ -51,6 +54,9 @@ Plug 'hrsh7th/nvim-compe'
 " Plug 'nvim-treesitter/nvim-treesitter-context'
 Plug 'wellle/context.vim'
 Plug 'mattn/emmet-vim'
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
+Plug 'iamcco/markdown-preview.nvim', { 'do': ':call mkdp#util#install()', 'for': 'markdown' }
+
 call plug#end()
 
 " nmap <F8> :TagbarToggle<CR>
@@ -98,6 +104,10 @@ let g:fzf_action = {
   \}
 
 nnoremap <C-m> :!open -a 'Brave Browser' %<CR><CR>
+" nnoremap <C-i> :term python3 main.py <CR>
+nnoremap <C-i> :!python3 % <CR>
+
+nmap <C-s> <Plug>MarkdownPreview
 
 let g:NERDTreeDirArrowExpandable="+"
 let g:NERDTreeDirArrowCollapsible="~"

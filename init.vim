@@ -6,7 +6,7 @@ set nohlsearch
 set hidden
 set noerrorbells
 set autoindent
-set tabstop=4 softtabstop=4
+set tabstop=4
 set shiftwidth=4
 set mouse=a
 set smarttab
@@ -56,11 +56,28 @@ Plug 'wellle/context.vim'
 Plug 'mattn/emmet-vim'
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 Plug 'iamcco/markdown-preview.nvim', { 'do': ':call mkdp#util#install()', 'for': 'markdown' }
+Plug 'puremourning/vimspector'
 
 call plug#end()
 
 " nmap <F8> :TagbarToggle<CR>
 " doesn't work yet
+
+" TODO: make VimSpector work
+" VimSpector - DEBUGGER
+let g:vimspector_enable_mappings = 'HUMAN'
+nnoremap da <cmd>:call vimspector#Launch()<CR>
+nnoremap dx <cmd>:call vimspector#Reset()<CR>
+nnoremap <S-k> :call vimspector#StepOut()<CR>
+nnoremap <S-l> :call vimspector#StepInto()<CR>
+nnoremap <S-j> :call vimspector#StepOver()<CR>
+nnoremap d__ <cmd>:call vimspector#Restart()<CR>
+nnoremap dn <cmd>:call vimspector#Continue()<CR>
+nnoremap drc <cmd>:call vimspector#RunToCursor()<CR>
+nnoremap dh <cmd>:call vimspector#ToggleBreakpoint()<CR>
+nnoremap de <cmd>:call vimspector#ToggleConditionalBreakpoint()<CR>
+nnoremap dX <cmd>:call vimspector#ClearBreakpoints()<CR>
+let g:vimspector_base_dir = expand("$HOME/.config/nvim/vimspector-config")
 
 " Emmet
 let g:user_emmet_leader_key=','

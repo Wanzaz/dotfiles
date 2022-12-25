@@ -109,6 +109,11 @@ _G.packer_plugins = {
     path = "/Users/ondrejpazourek/.local/share/nvim/site/pack/packer/start/context.vim",
     url = "https://github.com/wellle/context.vim"
   },
+  ["emmet-vim"] = {
+    loaded = true,
+    path = "/Users/ondrejpazourek/.local/share/nvim/site/pack/packer/start/emmet-vim",
+    url = "https://github.com/mattn/emmet-vim"
+  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/Users/ondrejpazourek/.local/share/nvim/site/pack/packer/start/friendly-snippets",

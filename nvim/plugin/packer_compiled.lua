@@ -104,6 +104,11 @@ _G.packer_plugins = {
     path = "/Users/ondrejpazourek/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
+  ["context.vim"] = {
+    loaded = true,
+    path = "/Users/ondrejpazourek/.local/share/nvim/site/pack/packer/start/context.vim",
+    url = "https://github.com/wellle/context.vim"
+  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/Users/ondrejpazourek/.local/share/nvim/site/pack/packer/start/friendly-snippets",

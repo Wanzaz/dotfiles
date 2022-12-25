@@ -44,4 +44,9 @@ return require('packer').startup(function(use)
   use('tpope/vim-commentary')
   use('wellle/context.vim')
   use('mattn/emmet-vim')
+  use {
+    'iamcco/markdown-preview.nvim',
+    run = function() vim.fn['mkdp#util#install']() end,
+    ft = {'markdown'}
+}
 end)

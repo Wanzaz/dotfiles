@@ -50,4 +50,5 @@ return require('packer').startup(function(use)
     ft = {'markdown'}
  }
  use('907th/vim-auto-save')
+ use('Raimondi/delimitMate')
 end)

@@ -109,6 +109,11 @@ _G.packer_plugins = {
     path = "/Users/ondrejpazourek/.local/share/nvim/site/pack/packer/start/context.vim",
     url = "https://github.com/wellle/context.vim"
   },
+  delimitMate = {
+    loaded = true,
+    path = "/Users/ondrejpazourek/.local/share/nvim/site/pack/packer/start/delimitMate",
+    url = "https://github.com/Raimondi/delimitMate"
+  },
   ["emmet-vim"] = {
     loaded = true,
     path = "/Users/ondrejpazourek/.local/share/nvim/site/pack/packer/start/emmet-vim",

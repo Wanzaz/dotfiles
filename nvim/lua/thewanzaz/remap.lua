@@ -25,7 +25,7 @@ vim.keymap.set("x", "<leader>p", [["_dP]])
 vim.keymap.set("n", "<Ctrl-[>", "<Esc>")
 
 -- faster execution
-vim.keymap.set("n", "<C-i>", ":!python3 % <CR>")
+vim.keymap.set("n", "<C-w>", ":!python3 % <CR>")
 vim.keymap.set("n", "<C-m>", ":!open -a 'Brave Browser' % <CR>")
 
 -- next greatest remap ever : asbjornHaland

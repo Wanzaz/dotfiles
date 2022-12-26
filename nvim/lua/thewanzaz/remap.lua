@@ -27,6 +27,10 @@ vim.keymap.set("x", "<leader>p", [["_dP]])
 -- remaping Esc
 vim.keymap.set("n", "<Ctrl-[>", "<Esc>")
 
+-- faster execution
+vim.keymap.set("n", "<C-i>", ":!python3 % <CR>")
+vim.keymap.set("n", "<C-m>", ":!open -a 'Brave Browser' % <CR>")
+
 -- next greatest remap ever : asbjornHaland
 vim.keymap.set({"n", "v"}, "<leader>y", [["+y]])
 vim.keymap.set("n", "<leader>Y", [["+Y]])

@@ -26,7 +26,7 @@ vim.keymap.set("n", "<Ctrl-[>", "<Esc>")
 
 -- faster execution
 vim.keymap.set("n", "<C-w>", ":!python3 % <CR>")
-vim.keymap.set("n", "<C-q>", ":!flask run <CR>")
+vim.keymap.set("n", "<C-b>", ":!flask run <CR>")
 vim.keymap.set("n", "<C-m>", ":!open -a 'Brave Browser' % <CR>")
 
 -- next greatest remap ever : asbjornHaland

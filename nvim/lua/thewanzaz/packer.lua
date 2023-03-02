@@ -51,4 +51,7 @@ return require('packer').startup(function(use)
  }
  use('907th/vim-auto-save')
  use('Raimondi/delimitMate')
+ -- Database
+ use { 'tpope/vim-dadbod' }
+ use { 'kristijanhusak/vim-dadbod-ui' }
 end)

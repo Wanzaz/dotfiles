@@ -5,11 +5,11 @@ lsp.ensure_installed({
 	'tsserver',
 	'rust_analyzer',
 	'eslint',
-	'sumneko_lua',
+	'lua_ls',
 })
 
 -- Fix Undefined global 'vim'
-lsp.configure('sumneko_lua', {
+lsp.configure('lua_ls', { -- sumneko_lua
     settings = {
         Lua = {
             diagnostics = {
